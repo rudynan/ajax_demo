@@ -1,0 +1,333 @@
+//初始化
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+body, button, input, select, textarea {
+  body {
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    margin-top: 5px;
+    font-family: "Micsrisoft Yahei", "SimSun", "宋体", "Arial Narrow";
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace;
+}
+
+small {
+  font-size: 12px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+legend {
+  color: #000;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix {
+  display: block;
+  zoom: 1;
+
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+//初始化结束
+
+//Variables
+@red: #CC0029;
+@fontcolor: #555555;
+//Variables end
+
+//mixin
+.inputtext {
+  height: 25px;
+  border: 1px solid #ABABAB;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.hover {
+  border: 1px solid #666666;
+}
+
+//mixinend
+
+.mainbox {
+  width: 642px;
+  height: 708px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  .contant {
+    padding-top: 90px;
+    .firstbox {
+      position: relative;
+      padding-left: 90px;
+      dl {
+        position: relative;
+        dt {
+          color: @fontcolor;
+          position: absolute;
+          top: 0;
+          left: 0;
+          .point {
+            color: @red;
+            margin-right: 6px;
+          }
+        }
+        dd {
+          padding-left: 89px;
+          .input {
+            width: 205px;
+            font-size: 18px;
+            .inputtext;
+            padding-left: 5px;
+            &:hover {
+              .hover;
+            }
+          }
+          .server {
+            width: 96px;
+            .inputtext;
+          }
+        }
+      }
+      .attent {
+        display: none;
+        .arr {
+          width: 25px;
+          height: 14px;
+          background: url("../images/glb_v2.png") no-repeat;
+          background-position: -576px -72px;
+          position: absolute;
+          top: 28px;
+          left: 212px;
+          z-index: 111;
+        }
+        .rb {
+          width: 277px;
+          height: 48px;
+          border: 2px solid #C6C6A8;
+          margin-top: 13px;
+          margin-left: 89px;
+          display: block;
+          position: relative;
+          line-height: 48px;
+          padding-left: 53px;
+          background-color: #FFFFE1;
+          color: #CC0000;
+
+          b {
+            width: 30px;
+            height: 30px;
+            display: block;
+            background: url("../images/glb_v2.png") no-repeat;
+            background-position: 0 -216px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+          }
+        }
+      }
+      .attent2{
+        display: none;
+        .arr {
+          width: 25px;
+          height: 14px;
+          background: url("../images/glb_v2.png") no-repeat;
+          background-position: -576px -72px;
+          position: absolute;
+          top: 28px;
+          left: 212px;
+          z-index: 111;
+        }
+        .rb {
+          width: 277px;
+          height: 48px;
+          border: 2px solid #C6C6A8;
+          margin-top: 13px;
+          margin-left: 89px;
+          display: block;
+          position: relative;
+          line-height: 48px;
+          padding-left: 53px;
+          background-color: #FFFFE1;
+          color: #CC0000;
+
+          b {
+            width: 30px;
+            height: 30px;
+            display: block;
+            background: url("../images/glb_v2.png") no-repeat;
+            background-position: 0 -216px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+          }
+        }
+      }
+      .attent3{
+        display: none ;
+        .rb {
+          margin-left: 89px;
+          display: block;
+          position: relative;
+          line-height: 30px;
+          padding-left: 21px;
+          color: #3D882D;
+          font-size: 12px;
+          b {
+            width: 14px;
+            height: 14px;
+            display: block;
+            background: url("../images/glb_v2.png") no-repeat;
+            background-position: 0 -288px;
+            position: absolute;
+            top: 10px;
+            left: 0;
+          }
+        }
+      }
+    }
+    .secondbox {
+      padding-left: 90px;
+      padding-top: 15px;
+      dl {
+        position: relative;
+        dt {
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: @fontcolor;
+          .pointm {
+            color: @red;
+            margin-right: 6px;
+          }
+        }
+        .inputm {
+          width: 327px;
+          font-size: 30px;
+          .inputtext;
+          padding-left: 5px;
+          &:hover {
+            .hover;
+          }
+        }
+        dd {
+          padding-left: 89px;
+          .inputm2 {
+            background-color: #FBE2E2;
+            border-color:#C66161;
+            color: #C00;
+          }
+        }
+      }
+      .attentm {
+        display:none;
+        margin-left: 89px;
+        position: relative;
+        b {
+          width: 14px;
+          height: 14px;
+          display: block;
+          background:url(../images/glb_v2.png) no-repeat;
+          background-position: -36px -288px;
+          position: absolute;
+          top: 7px;
+          left: 0;
+        }
+        span {
+          padding-left: 22px;
+          font-size: 12px;
+          line-height: 25px;
+          color: #CC0000;
+        }
+      }
+      .tip2 {
+        font-size: 12px;
+        color: @fontcolor;
+        padding-left: 89px;
+        line-height: 30px;
+      }
+    }
+  }
+  .tip {
+    font-size: 12px;
+    color: @fontcolor;
+    padding-left: 89px;
+    line-height: 30px;
+  }
+
+
+  .tipcolor {
+    color: red;
+  }
+  .tipcolor2 {
+    color: #222;
+  }
+  .sub {
+    a {
+      display: block;
+      width: 117px;
+      height: 35px;
+      margin: 30px auto;
+      background: linear-gradient(#60B54C, #44A52e);
+      border: 1px solid #2F7D1B;
+      text-align: center;
+      line-height: 35px;
+      color: #FFFFE0;
+      text-decoration: none;
+    }
+  }
+}
+
